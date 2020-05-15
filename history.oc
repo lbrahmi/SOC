@@ -1,0 +1,89 @@
+    1  ll
+    2  pwd
+    3  ifconfig
+    4  ipconfig
+    5  yum-install
+    6  yum install
+    7  yum-install net-tools
+    8  yum install net-tools
+    9  yum repolist all
+   10  mount
+   11  mkdi -p /mnt/disc
+   12  mkdir -p /mnt/disc
+   13  mount -0 loop rhel-server-7.3x86_64-dvd.iso  /mn/disc 
+   14  mount -o loop rhel-server-7.3x86_64-dvd.iso  /mn/disc 
+   15  ll /dev/C
+   16  ll /dev/  | more
+   17  ll /dev/loop0  | more
+   18  ll /mnt/disc
+   19  umount -o loop rhel-server-7.3x86_64-dvd.iso  /mn/disc 
+   20  unmount -o loop rhel-server-7.3x86_64-dvd.iso  /mn/disc 
+   21  mount -o loop rhel-server-7.3x86_64-dvd.iso  /mnt/disc 
+   22  ll  /dev
+   23  ll  /dev | more
+   24  ll /dev/media
+   25  ll /dev/cdrom
+   26  mount -o loop /dev/cdrom  /mnt/disc 
+   27  cp /mnt/disc/media.repo /etc/yum.repos.d/rhel7dvd.iso
+   28  chmod 644 /etc/yum.repos.d/rhel7dvd.iso 
+   29  vi  /etc/yum.repos.d/rhel7dvd.repo 
+   30  ll  /etc/yum.repos.d/
+   31  vi  /etc/yum.repos.d/rhel7dvd.repo 
+   32  yum clean all
+   33  yum repolist enabled
+   34  yum update
+   35  yum install net-tools
+   36  ifconfig
+   37  hostname
+   38  ifconfig
+   39  poweroff
+   40  ip a
+   41  cd /etc/sysconfig/network-scripts/
+   42  ls -al
+   43  vi ifcfg-eth0
+   44  systenctl restart network
+   45  systemctl restart network
+   46  ip a
+   47  ping 10.195.6.1
+   48  ping 10.195.6.201
+   49  ping 10.195.6.202
+   50  ping 10.195.6.1
+   51  systemctl status network
+   52  ping 10.195.6.1
+   53  systemctl status Firewalld
+   54  systemctl status firewalld
+   55  systemctl stop firewalld
+   56  systemctl disable firewalld
+   57  getenforce
+   58  setenforce 0
+   59  vi /etc/selinux/config 
+   60  ping 10.195.6.1
+   61  ip r
+   62  poweroff
+   63  wget https://downloads-openshift-console.apps.ocp64.dat.lab-services.ca/amd64/linux/oc.tar
+   64  curl
+   65  curl https://downloads-openshift-console.apps.ocp64.dat.lab-services.ca/amd64/linux/oc.tar -o oc.tar
+   66  curl -k https://downloads-openshift-console.apps.ocp64.dat.lab-services.ca/amd64/linux/oc.tar -o oc.tar
+   67  tar -vxdf oc.tar
+   68  tar vxf oc.tar
+   69  cll
+   70  ll al
+   71  ll -al
+   72  mv oc /usr/local/bin
+   73  oc
+   74  oc login -u kubeadmin -p jInHs-Y3KLR-mMxi3-tKeUC --server=https://api.ocp64.dat.lab-services.ca:6443
+   75  oc login -u kubeadmin -p jInHs-Y3KLR-mMxi3-tKeUC https://api.ocp64.dat.lab-services.ca:6443
+   76  oc login -u kubeadmin -p jInHs-Y3KLR-mMxi3-tKeUC tps://api.ocp64.dat.lab-services.ca:6443
+   77  oc login -u kubeadmin -p jInHs-Y3KLR-mMxi3-tKeUC https://api.ocp64.dat.lab-services.ca:6443
+   78* oc login --token=Fb5KGczQYpp733Ke7XbTL-P65ePzLSmds1XAGrX_YuQ --server=https://api.ocp64.dat.lab-servic
+   79  oc login -u kubeadmin -p jInHs-Y3KLR-mMxi3-tKeUC
+   80  history
+   81  cat .bashrc
+   82  export KUBECONFIG=/root/.kube/kubeconfig
+   83  oc login -u kubeadmin -p jInHs-Y3KLR-mMxi3-tKeUC
+   84  oc new-project Laid
+   85  oc new-project laid
+   86  pwd
+   87  oc projects
+   88  history
+   89  history > history.oc
